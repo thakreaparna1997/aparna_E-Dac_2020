@@ -1,0 +1,241 @@
+/*package string;
+import java.io.*; 
+import java.util.Scanner;
+  
+public class Demo1 { 
+  
+    
+    static void countCharacterType(String str) 
+    { 
+       
+        int vowels = 0, consonant = 0, specialChar = 0,  
+            digit = 0; 
+      
+       
+        for (int i = 0; i < str.length(); i++) { 
+              
+            char ch = str.charAt(i); 
+      
+            if ( (ch >= 'a' && ch <= 'z') ||  
+                (ch >= 'A' && ch <= 'Z') ) { 
+      
+               
+                ch = Character.toLowerCase(ch);; 
+      
+                if (ch == 'a' || ch == 'e' || ch == 'i' || 
+                    ch == 'o' || ch == 'u') 
+                    vowels++; 
+                else
+                    consonant++; 
+            } 
+            else if (ch >= '0' && ch <= '9') 
+                digit++; 
+            else
+                specialChar++; 
+        } 
+          
+        System.out.println("Vowels: " + vowels); 
+        System.out.println("Consonant: " + consonant); 
+        System.out.println("Digit: " + digit); 
+        System.out.println("Special Character: " + specialChar); 
+    } 
+      
+    
+    static public void main (String[] args) 
+    { 
+        //String str = "I am learning java1.8"; 
+          String str;
+          System.out.println("Enter the String");
+          Scanner sc=new Scanner(System.in);
+          str=sc.next();
+        countCharacterType(str); 
+    } 
+} 
+
+*/
+//===============================================
+/*ackage string;
+class Demo3{
+    public static void main(String args[]){
+        String str ="###aabc";
+        str = str.replaceAll("(.)\\1+","$1");
+        System.out.println(str);
+    }
+}*/
+//=================================================
+/* 
+ackage string;
+class Demo4 { 
+    static final int NO_OF_CHARS = 256; 
+    static char count[] = new char[NO_OF_CHARS]; 
+  
+    
+    static void getCharCountArray(String str) 
+    { 
+        for (int i = 0; i < str.length(); i++) 
+            count[str.charAt(i)]++; 
+    } 
+  
+    
+    static int firstNonRepeating(String str) 
+    { 
+        getCharCountArray(str); 
+        int index = -1, i; 
+  
+        for (i = 0; i < str.length(); i++) { 
+            if (count[str.charAt(i)] == 1) { 
+                index = i; 
+                break; 
+            } 
+        } 
+  
+        return index; 
+    } 
+  
+ 
+    public static void main(String[] args) 
+    { 
+        String str = "remember one thing"; 
+        int index = firstNonRepeating(str); 
+  
+        System.out.println( 
+            index == -1
+                ? "Either all characters are repeating or string "
+                      + "is empty"
+                : "First non-repeating character is "
+                      + str.charAt(index)); 
+    } 
+} */
+//===========================================
+
+
+/*package string;
+class Demo5 { 
+    static void count(String str) 
+    { 
+        
+        char[] ch = str.toCharArray(); 
+        for (int i = 0; i < ch.length; i++) { 
+  
+           
+            String s = ""; 
+  
+            
+            while (i < ch.length && ch[i] != ' ') { 
+  
+               
+                s = s + ch[i]; 
+                i++; 
+            } 
+  
+            if (s.length() > 0)  
+                System.out.println(s + "->" + s.length());             
+        } 
+    } 
+    public static void main(String[] args) 
+    { 
+        String str = "I am learning java"; 
+        count(str); 
+    } 
+} 
+*/
+//===============================================
+/*ackage String;
+class Demo7{ 
+       
+     
+     static void convertOpposite(StringBuffer str) 
+     { 
+        int ln = str.length(); 
+             
+         
+        for (int i=0; i<ln; i++) 
+        { 
+            Character c = str.charAt(i); 
+            if (Character.isLowerCase(c)) 
+                str.replace(i, i+1, Character.toUpperCase(c)+""); 
+            else
+                str.replace(i, i+1, Character.toLowerCase(c)+""); 
+             
+        } 
+     } 
+       
+     public static void main(String[] args)  
+     { 
+         StringBuffer str = new StringBuffer("Hello World"); 
+         
+         convertOpposite(str); 
+           
+         System.out.println(str); 
+        } 
+ } */
+//==========================================
+
+/*package string;
+import java.util.*;
+class Demo8
+{
+  public static void main(String args[])
+  {
+    String original, reverse = "";
+    Scanner in = new Scanner(System.in);
+
+    System.out.println("Enter a string to reverse");
+    original = in.nextLine();
+
+    int length = original.length();
+
+    for (int i = length - 1 ; i >= 0 ; i--)
+      reverse = reverse + original.charAt(i);
+
+    System.out.println("Reverse of the string: " + reverse);
+  }
+}*/
+
+//===============================================
+
+
+/*ackage string;
+import java.io.*; 
+import java.util.*; 
+  
+ 
+public class Demo9 
+{ 
+    static final int MAX_CHAR = 26; 
+  
+    static void printCommon(String s1, String s2) 
+    { 
+        
+        int[] a1 = new int[MAX_CHAR]; 
+        int[] a2 = new int[MAX_CHAR]; 
+  
+        int length1 = s1.length(); 
+        int length2 = s2.length(); 
+  
+        for (int i = 0 ; i < length1 ; i++) 
+           a1[s1.charAt(i) - 'a'] += 1; 
+  
+        for (int i = 0 ; i < length2 ; i++) 
+           a2[s2.charAt(i) - 'a'] += 1; 
+  
+        
+        for (int i = 0 ; i < MAX_CHAR ; i++) 
+        { 
+            if (a1[i] != 0 && a2[i] != 0) 
+            { 
+                
+                for (int j = 0 ; j < Math.min(a1[i], a2[i]) ; j++) 
+                    System.out.print(((char)(i + 'a'))); 
+            } 
+        } 
+    } 
+  
+    
+    public static void main(String[] args) throws IOException 
+    { 
+        String s1 = "hello", s2 = "oneandall"; 
+        printCommon(s1, s2); 
+    } 
+} */
+
