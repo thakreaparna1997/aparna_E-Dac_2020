@@ -1,0 +1,88 @@
+/*package inheritance;
+class Bank{
+    public void checkBalance(){
+        System.out.println("Your balance is ....");
+    }
+    public void printdetails()
+    {
+        System.out.println("Name of customer:abc");
+        System.out.println("Account no: 1235");
+}
+    
+}
+class Customer extends Bank{
+    public void Savingsaccount(){
+    System.out.println("This is savings account....");
+}
+}
+class main{
+    public static void main(String args[])
+    {
+        Customer ab=new Customer();
+        ab.checkBalance();
+        ab.Savingsaccount();
+        ab.printdetails();
+    }
+}
+*/
+//=========================================
+/*package inheritance;
+class Employee{
+    public void types(){
+        System.out.println("There are two types of employee.....");
+    }
+}
+class Manager extends Employee{
+    public void lead(){
+        System.out.println("work is to lead the team");
+        
+    }
+}
+class Worker extends Employee{
+    public void task(){
+        System.out.println("Complete the task");
+        
+    }
+}
+class Main{
+    public static void main(String args [])
+    {
+        Employee s1=new Employee();
+        Worker s2=new Worker();
+        s1.types();
+        s2.task();
+       
+        
+     
+    
+        
+    }
+}*/
+
+//=============================================
+/*
+package inheritance;
+interface College{
+    public void Studentid();
+}
+ interface Exam{
+    
+    public void studentmarks();
+    
+}
+ class Student implements College,Exam{
+    public void Studentid(){
+        System.out.println("Student id is 12");
+    }
+    public void studentmarks(){
+      System.out.println("Student marks is 80");
+    }
+}
+class Result{
+    public static void main(String args[])
+    {
+        Student s=new Student();
+        s.Studentid();
+        s.studentmarks();
+    }
+}*/
