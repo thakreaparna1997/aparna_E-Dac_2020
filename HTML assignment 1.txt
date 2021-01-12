@@ -1,0 +1,185 @@
+q1--
+<html>
+	<head>
+	</head>
+	
+	
+		<style>
+		body{margin:0;
+		padding:0;
+		font-family:Sans-Serif;
+		
+		background:url(a.jpg);
+		background-size:cover;}
+		.ab{
+		background-color:white;
+		}
+		</style>
+		
+	
+	<title>
+	Resume</title>
+	<body>
+	<fieldset>
+	<fieldset>
+	<img src="pic.jpg" align="right" width="200" height="200" >
+	
+	<h1 style="text-align:center;">Aparna Prakash Thakre</h1> 
+	<h4 style="text-align:center";>aparnathakre17@gmail.com<br>7756901664<br>8,Gopal Nagar,Nagpur</h4>
+	</fieldset><br>
+	<fieldset>
+	<ul><li>
+	<dl><dt>
+	<h3 class="ab">Career Objective:</h3></dt>
+	<dd>Self-motivated and hardworking graduate seeking an opportunity to work in a
+challenging environment to prove my coding skills and utilize my knowledge of
+various databases for the growth of the organization.
+Seeking the challenging position in the organization where I can enhance my skills
+being the contribution of the growing organization.</dd></dl></li>
+	<li><h3 class="ab">Educational Qualification</h3>
+                <style>
+                    table, th, td {
+                      border: 1px solid black;
+                      border-collapse: collapse;
+                    }
+                    th, td {
+                      padding: 5px;
+                    }
+                    th {
+                      text-align: left;
+                    }
+                    </style>
+                <table style="width:30%">
+                   
+                    <tr>
+                      <th>Course</th>
+                      <th>Institute</th> 
+                      <th>Year</th>
+					  <th>Percentage</th>
+                    </tr>
+                    <tr>
+                      <td>SSC</td>
+					  <td>Somalwar High School</td>
+                      <td>2013</td>
+                      <td>90</td>
+                    </tr>
+                    <tr>
+                      <td>HSSC</td>
+                      <td>Nutan Bharat Junior College</td>
+                      <td>2015</td>
+					  <td>75</td>
+                    </tr>
+                    <tr>
+                      <td>B.E.</td>
+					  <td>RGCER,Nagpur</td>
+                      <td>2019</td>
+                      <td>8.76</td>
+                    </tr>
+                  </table>
+                  
+                  </li>
+	<li><dl>
+	<dt><h3 class="ab"Professional Details:<h3></dl>
+	<dd>DATA ANALYST<br>
+TTEC INDIA PRIVATE LIMITED - 24 MAY'19 - 12 MAY'20<ul>
+<li>Applying logics to the complex data, analyzing and arranging it according to the
+requirements.</li>
+<li>Involved in high-level design, handling technical designs and complex application
+features.</li>
+<li>Worked effectively with design teams to ensure software solutions to improve
+clients experience</li></ul>
+	</dd>
+	</li>
+	<li><dl>
+	<dt><h3 class="ab">Projects</h3>
+	
+	</dt>
+	<dd><h4>Nagpur Metro</h4>
+	<ul><li>Built Nagpur Metro App using Android Studio</li>
+	<li>It is a Mini Project based on the navigation and schedule for Nagpur Metro</li></ul>
+	</dd>
+	<dd><h4>Crime Data Analysis</h4><ul>
+	<li>Worked on Crime data analysis using Java programming language</li>
+	<li>It is build to analyze the increasing crime rate in the surrounding.
+</li></ul></dd>
+	</dl>
+	</li>
+	<li><dl><dt><h3 class="ab">Skills</h3>
+	</dt>
+	<dd>
+	<ul>
+	<li>C Language</li>
+	<li>Mysql</li>
+	<li>Java </li>
+	<li>Worked on Windowns and linux Operationg System</li>
+	</ul></dd></dl>
+	<li><h3 class="ab">Languages</h3>
+	<ul>
+	<li>English</li>
+	<li>Marathi</li>
+	<li>Hindi</li></ul></li>
+	
+	<li><h3 class="ab">Hobbies</h3>
+	<ul>
+	<li>Playing Badmintion</li>
+	<li>Cooking </li>
+	<li>Drawing and Sketching</li></ul></li>
+	</ul>
+	<br>
+	<p align="center";>I hereby confirmed that all above mentioned information is true to my knowledge 
+and belief.</p>
+<h4>Date:<h4>
+<h4>Place:Nagpur</h4>
+<h4 align="right";>Yours Sincerely</h4>
+<h4 align="right";>Aparna Prakash Thakre</h4>
+	</fieldset>
+	</fieldset>
+	</body>
+	
+</html>
+
+
+q2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>function init() {
+        var name = 'Mozilla'; // name is a local variable created by init
+        function displayName() { // displayName() is the inner function, a closure
+          alert(name); // use variable declared in the parent function
+        }
+        displayName();
+      }
+      init();</script>
+</body>
+</html>
+
+q3
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+var ans=reverseString('hello');
+console.log(ans);
+    </script>
+</body>
+</html>
